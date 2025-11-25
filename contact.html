@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Lider | Get Free Quote</title>
+    <meta name="description" content="Contact Lider for free quotes and professional air conditioning repair and sales services. Call (123) 456-7890 or fill out our contact form for fast response.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-snowflake"></i>
+                    <span data-translate="header.logo">Lider</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-translate="nav.home">Home</a></li>
+                    <li><a href="services.html" data-translate="nav.services">Services</a></li>
+                    <li><a href="about.html" data-translate="nav.about">About</a></li>
+                    <li><a href="contact.html" class="active" data-translate="nav.contact">Contact</a></li>
+                </ul>
+                <div class="nav-contact">
+                    <a href="tel:+77750692588" class="phone-btn">
+                        <i class="fas fa-phone"></i>
+                        <span data-translate="header.phone">(123) 456-7890</span>
+                    </a>
+                </div>
+                <div class="language-switcher">
+                    <div class="lang-selector">
+                        <button class="lang-trigger" id="langTrigger" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-globe"></i>
+                            <span class="current-lang">EN</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="lang-dropdown" id="langDropdown">
+                            <div class="lang-option" data-lang="en">
+                                <span class="lang-flag">🇺🇸</span>
+                                <span class="lang-name">English</span>
+                                <span class="lang-code">EN</span>
+                            </div>
+                            <div class="lang-option" data-lang="ru">
+                                <span class="lang-flag">🇷🇺</span>
+                                <span class="lang-name">Русский</span>
+                                <span class="lang-code">RU</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-translate="contact.page.title">Contact Us</h1>
+            <p data-translate="contact.page.subtitle">Get in touch for a free quote or professional AC services</p>
+        </div>
+    </section>
+
+    <!-- Emergency Contact Banner -->
+    <section class="emergency-banner">
+        <div class="container">
+            <div class="emergency-content">
+                <div class="emergency-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <div class="emergency-text">
+                    <h2 data-translate="contact.emergency.title">Professional AC Services Available</h2>
+                    <p data-translate="contact.emergency.desc">Get expert repair and sales services for all your air conditioning needs.</p>
+                </div>
+                <div class="emergency-phone">
+                    <a href="tel:+77750692588" class="btn btn-emergency">
+                        <i class="fas fa-phone"></i>
+                        <span data-translate="contact.emergency.phone">(123) 456-7890</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods Section -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="contact.methods.title">Get In Touch</h2>
+                <p data-translate="contact.methods.subtitle">Multiple ways to reach us for your air conditioning repair and sales needs</p>
+            </div>
+            <div class="contact-methods-grid">
+                <div class="contact-method">
+                    <div class="method-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 data-translate="contact.methods.call.title">Call Us</h3>
+                    <p data-translate="contact.methods.call.desc">Speak directly with our team</p>
+                    <div class="method-details">
+                        <a href="tel:+77750692588" class="method-link" data-translate="contact.methods.call.phone">(123) 456-7890</a>
+                        <span class="method-note" data-translate="contact.methods.call.note">Available 24/7</span>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <div class="method-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 data-translate="contact.methods.email.title">Email Us</h3>
+                    <p data-translate="contact.methods.email.desc">Send us a detailed message</p>
+                    <div class="method-details">
+                        <a href="mailto:lider.kondicioner@gmail.com" class="method-link" data-translate="contact.methods.email.address">lider.kondicioner@gmail.com</a>
+                        <span class="method-note" data-translate="contact.methods.email.note">Response within 2 hours</span>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <div class="method-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 data-translate="contact.methods.visit.title">Visit Us</h3>
+                    <p data-translate="contact.methods.visit.desc">Stop by our office</p>
+                    <div class="method-details">
+                        <span class="method-link" data-translate="contact.methods.visit.address">г.Алматы, проспект Наурызбай батыра 152<br>офис 26</span>
+                        <span class="method-note" data-translate="contact.methods.visit.note">Mon-Fri 8AM-6PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" style="margin-top: 50px; margin-bottom: 50px;">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="contact.map.title">Find Us</h2>
+                <p data-translate="contact.map.subtitle">Visit our office in Almaty</p>
+            </div>
+            <div class="map-container">
+                <div style="position:relative;overflow:hidden;">
+                    <a href="https://yandex.kz/maps/ru/162/almaty/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Алматы</a>
+                    <a href="https://yandex.kz/maps/ru/162/almaty/house/nauryzbay_batyr_koshesi_152a/Y08YfwRoTUAPQFppfX51cHxgZQ==/?ll=76.938458%2C43.241032&utm_medium=mapframe&utm_source=maps&z=16.92" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Наурызбай батыра, 152А — Яндекс Карты</a>
+                    <iframe src="https://yandex.kz/map-widget/v1/?ll=76.938458%2C43.241032&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNDkyODUxNDkwElPSmtCw0LfQsNKb0YHRgtCw0L0sINCQ0LvQvNCw0YLRiywg0J3QsNGD0YDRi9C30LHQsNC5INCx0LDRgtGL0YAg0LrTqdGI0LXRgdGWLCAxNTLQkCIKDX3gmUIV0fYsQg%2C%2C&z=16.92" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <!-- <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 data-translate="contact.form.title">Get Your Free Quote Today</h2>
+                    <p data-translate="contact.form.subtitle">Fill out the form below and we'll get back to you within 24 hours with a free estimate for your air conditioning needs.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4 data-translate="contact.info.phone">Phone</h4>
+                                <p data-translate="contact.info.phone.number">(123) 456-7890</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4 data-translate="contact.info.email">Email</h4>
+                                <p data-translate="contact.info.email.address">info@lider.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4 data-translate="contact.info.address">Address</h4>
+                                <p data-translate="contact.info.address.full">г.Алматы, проспект Наурызбай батыра 152, офис 26</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4 data-translate="contact.info.hours">Hours</h4>
+                                <p data-translate="contact.info.hours.desc">24/7 Emergency Service Available</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="contact.features.estimates">Free estimates</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="contact.features.sameday">Same-day service</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="contact.features.licensed">Licensed technicians</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="contact.features.warranty">Warranty included</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="quoteForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" data-translate="contact.form.name">Full Name *</label>
+                                <input type="text" id="name" name="name" data-translate="contact.form.name.placeholder" placeholder="Your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" data-translate="contact.form.email">Email Address *</label>
+                                <input type="email" id="email" name="email" data-translate="contact.form.email.placeholder" placeholder="your.email@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone" data-translate="contact.form.phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" data-translate="contact.form.phone.placeholder" placeholder="(123) 456-7890" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="service" data-translate="contact.form.service">Service Needed *</label>
+                                <select id="service" name="service" required>
+                                    <option value="" data-translate="contact.form.service.select">Select a service</option>
+                                    <option value="repair" data-translate="contact.form.service.repair">AC Repair</option>
+                                    <option value="maintenance" data-translate="contact.form.service.maintenance">AC Maintenance</option>
+                                    <option value="installation" data-translate="contact.form.service.installation">AC Installation</option>
+                                    <option value="emergency" data-translate="contact.form.service.emergency">Emergency Service</option>
+                                    <option value="quote" data-translate="contact.form.service.quote">General Quote</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address" data-translate="contact.form.address">Service Address</label>
+                            <input type="text" id="address" name="address" data-translate="contact.form.address.placeholder" placeholder="Your service address">
+                        </div>
+                        <div class="form-group">
+                            <label for="urgency" data-translate="contact.form.urgency">Urgency Level</label>
+                            <select id="urgency" name="urgency">
+                                <option value="normal" data-translate="contact.form.urgency.normal">Normal - Within a few days</option>
+                                <option value="urgent" data-translate="contact.form.urgency.urgent">Urgent - Within 24 hours</option>
+                                <option value="emergency" data-translate="contact.form.urgency.emergency">Emergency - Same day</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-translate="contact.form.message">Message</label>
+                            <textarea id="message" name="message" data-translate="contact.form.message.placeholder" placeholder="Describe your issue or requirements in detail..." rows="4"></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                <span data-translate="contact.form.newsletter">Subscribe to our newsletter for maintenance tips and special offers</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-translate="contact.form.submit">Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Service Areas Section -->
+    <section class="service-areas">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="contact.areas.title">Service Areas</h2>
+                <p data-translate="contact.areas.subtitle">We proudly serve the following areas with fast, reliable AC services</p>
+            </div>
+            <div class="areas-grid">
+                <div class="area-item">
+                    <h3 data-translate="contact.areas.city.title">City Center</h3>
+                    <p data-translate="contact.areas.city.desc">Downtown and surrounding neighborhoods</p>
+                    <span class="response-time" data-translate="contact.areas.city.response">Response: 1-2 hours</span>
+                </div>
+                <div class="area-item">
+                    <h3 data-translate="contact.areas.north.title">North Suburbs</h3>
+                    <p data-translate="contact.areas.north.desc">Northern residential areas</p>
+                    <span class="response-time" data-translate="contact.areas.north.response">Response: 2-3 hours</span>
+                </div>
+                <div class="area-item">
+                    <h3 data-translate="contact.areas.south.title">South Suburbs</h3>
+                    <p data-translate="contact.areas.south.desc">Southern residential areas</p>
+                    <span class="response-time" data-translate="contact.areas.south.response">Response: 2-3 hours</span>
+                </div>
+                <div class="area-item">
+                    <h3 data-translate="contact.areas.east.title">East Side</h3>
+                    <p data-translate="contact.areas.east.desc">Eastern neighborhoods and communities</p>
+                    <span class="response-time" data-translate="contact.areas.east.response">Response: 1-2 hours</span>
+                </div>
+                <div class="area-item">
+                    <h3 data-translate="contact.areas.west.title">West Side</h3>
+                    <p data-translate="contact.areas.west.desc">Western areas and business districts</p>
+                    <span class="response-time" data-translate="contact.areas.west.response">Response: 1-2 hours</span>
+                </div>
+                <div class="area-item">
+                    <h3 data-translate="contact.areas.outlying.title">Outlying Areas</h3>
+                    <p data-translate="contact.areas.outlying.desc">Rural and suburban communities</p>
+                    <span class="response-time" data-translate="contact.areas.outlying.response">Response: 3-4 hours</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="contact.faq.title">Frequently Asked Questions</h2>
+                <p data-translate="contact.faq.subtitle">Quick answers to common questions about our services</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-translate="contact.faq.emergency.question">How quickly can you respond to emergency calls?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-translate="contact.faq.emergency.answer">We typically respond to emergency calls within 2-4 hours, depending on your location and current call volume. Same-day service is available for most emergency repairs.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-translate="contact.faq.estimates.question">Do you offer free estimates?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-translate="contact.faq.estimates.answer">Yes, we provide free estimates for all our services. We'll assess your needs and provide a detailed quote with no obligation to proceed.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-translate="contact.faq.brands.question">What brands of AC systems do you work on?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-translate="contact.faq.brands.answer">We service all major brands including Carrier, Trane, Lennox, Rheem, Goodman, and many others. Our technicians are trained on the latest models and technologies.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-translate="contact.faq.maintenance.question">Do you offer maintenance plans?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-translate="contact.faq.maintenance.answer">Yes, we offer comprehensive maintenance plans that include regular inspections, filter changes, and priority scheduling. These plans help prevent costly breakdowns.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-translate="contact.faq.licensed.question">Are your technicians licensed and insured?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-translate="contact.faq.licensed.answer">Absolutely. All our technicians are licensed, bonded, and insured. We also carry comprehensive liability insurance to protect your property.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-translate="contact.faq.warranty.question">What warranty do you provide on your work?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-translate="contact.faq.warranty.answer">We provide a 1-year warranty on all repairs and installations. Parts come with manufacturer warranties, and we stand behind all our workmanship.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-snowflake"></i>
+                        <span data-translate="footer.logo">Lider</span>
+                    </div>
+                    <p data-translate="footer.about.desc">Professional air conditioning repair, maintenance, and installation services. Your comfort is our priority.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer.services">Services</h4>
+                    <ul>
+                        <li><a href="services.html#repair" data-translate="footer.services.repair">AC Repair</a></li>
+                        <li><a href="services.html#sales" data-translate="footer.services.sales">AC Sales</a></li>
+                        <li><a href="services.html#chiller" data-translate="footer.services.chiller">Chiller Systems</a></li>
+                        <li><a href="services.html#consultation" data-translate="footer.services.consultation">Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer.company">Company</h4>
+                    <ul>
+                        <li><a href="about.html" data-translate="footer.company.about">About Us</a></li>
+                        <li><a href="contact.html" data-translate="footer.company.contact">Contact</a></li>
+                        <li><a href="services.html" data-translate="footer.company.careers">Careers</a></li>
+                        <li><a href="#" data-translate="footer.company.privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer.contact">Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> <span data-translate="footer.contact.phone">(123) 456-7890</span></p>
+                        <p><i class="fas fa-envelope"></i> <span data-translate="footer.contact.email">info@lider.com</span></p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span data-translate="footer.contact.address">г.Алматы, проспект Наурызбай батыра 152, офис 26</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">&copy; 2024 Lider. All rights reserved. | Licensed & Insured</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

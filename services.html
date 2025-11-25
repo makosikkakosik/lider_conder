@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Lider | AC Repair & Sales</title>
+    <meta name="description" content="Professional repair and sales of air conditioners and chiller systems. Quality service and reliable solutions for all your cooling needs.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-snowflake"></i>
+                    <span data-translate="header.logo">Lider</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-translate="nav.home">Home</a></li>
+                    <li><a href="services.html" class="active" data-translate="nav.services">Services</a></li>
+                    <li><a href="about.html" data-translate="nav.about">About</a></li>
+                    <li><a href="contact.html" data-translate="nav.contact">Contact</a></li>
+                </ul>
+                <div class="nav-contact">
+                    <a href="tel:+77750692588" class="phone-btn">
+                        <i class="fas fa-phone"></i>
+                        <span data-translate="header.phone">(123) 456-7890</span>
+                    </a>
+                </div>
+                <div class="language-switcher">
+                    <div class="lang-selector">
+                        <button class="lang-trigger" id="langTrigger" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-globe"></i>
+                            <span class="current-lang">EN</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="lang-dropdown" id="langDropdown">
+                            <div class="lang-option" data-lang="en">
+                                <span class="lang-flag">🇺🇸</span>
+                                <span class="lang-name">English</span>
+                                <span class="lang-code">EN</span>
+                            </div>
+                            <div class="lang-option" data-lang="ru">
+                                <span class="lang-flag">🇷🇺</span>
+                                <span class="lang-name">Русский</span>
+                                <span class="lang-code">RU</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-translate="services.page.title">Our Services</h1>
+            <p data-translate="services.page.subtitle">Professional repair and sales of air conditioners and chiller systems</p>
+        </div>
+    </section>
+
+    <!-- AC Repair Section -->
+    <section id="repair" class="service-detail">
+        <div class="container">
+            <div class="service-detail-content">
+                <div class="service-detail-text">
+                    <h2 data-translate="services.repair.full.title">AC Repair Services</h2>
+                    <p data-translate="services.repair.full.desc">Professional repair services for all types of air conditioners and chiller systems. Our experienced technicians can diagnose and fix any cooling system issue quickly and efficiently.</p>
+                    
+                    <div class="service-features">
+                        <div class="service-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="services.repair.feature1">All AC brands and models</span>
+                        </div>
+                        <!-- <div class="service-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="services.repair.feature2">Chiller system expertise</span>
+                        </div>
+                        <div class="service-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="services.repair.feature3">Licensed and insured technicians</span>
+                        </div> -->
+                        <div class="service-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="services.repair.feature4">Warranty on all repairs</span>
+                        </div>
+                    </div>
+
+                    <h3 data-translate="services.repair.problems.title" style="margin-bottom: 30px;">Common AC Problems We Fix</h3>
+                    <div class="problems-grid">
+                        <div class="problem-item">
+                            <h4><i class="fas fa-thermometer-half"></i> <span data-translate="services.repair.problems.cooling">Not Cooling</span></h4>
+                            <p data-translate="services.repair.problems.cooling.desc">Diagnose and fix issues with refrigerant levels, compressor problems, or airflow restrictions.</p>
+                        </div>
+                        <div class="problem-item">
+                            <h4><i class="fas fa-volume-up"></i> <span data-translate="services.repair.problems.noise">Strange Noises</span></h4>
+                            <p data-translate="services.repair.problems.noise.desc">Identify and resolve unusual sounds from motors, fans, or other components.</p>
+                        </div>
+                        <div class="problem-item">
+                            <h4><i class="fas fa-tint"></i> <span data-translate="services.repair.problems.leak">Water Leaks</span></h4>
+                            <p data-translate="services.repair.problems.leak.desc">Fix drainage issues and prevent water damage to your property.</p>
+                        </div>
+                        <div class="problem-item">
+                            <h4><i class="fas fa-bolt"></i> <span data-translate="services.repair.problems.electrical">Electrical Issues</span></h4>
+                            <p data-translate="services.repair.problems.electrical.desc">Repair wiring problems, capacitor failures, and electrical component issues.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-cta">
+                        <a href="contact.html" class="btn btn-primary" data-translate="services.repair.cta.schedule">Schedule Repair</a>
+                        <a href="tel:+77750692588" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i>
+                            <span data-translate="services.repair.cta.call">Call Now</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-detail-image">
+                    <img src="./img/ремонт.jpg" alt="AC Repair Technician">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AC Sales Section -->
+    <section id="sales" class="service-detail">
+        <div class="container">
+            <div class="service-detail-content reverse">
+                <div class="service-detail-image">
+                    <img src="./img/кондео.jpg" alt="AC Sales">
+                </div>
+                <div class="service-detail-text">
+                    <h2 data-translate="services.sales.full.title">AC Sales</h2>
+                    <p data-translate="services.sales.full.desc">Wide selection of high-quality air conditioners for residential and commercial use. We offer the best brands with competitive pricing and expert installation support.</p>
+                    
+                    <div class="service-features">
+                        <div class="service-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="services.sales.feature1">Top brand selection</span>
+                        </div>
+                        <div class="service-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="services.sales.feature2">Competitive pricing</span>
+                        </div>
+                        <div class="service-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="services.sales.feature3">Expert consultation</span>
+                        </div>
+                        <div class="service-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="services.sales.feature4">Warranty coverage</span>
+                        </div>
+                    </div>
+
+                    <h3 data-translate="services.sales.products.title" style="margin-bottom: 30px;">Product Categories</h3>
+                    <div class="products-grid">
+                        <div class="product-item">
+                            <h4 data-translate="services.sales.products.residential.title">Residential AC</h4>
+                            <p data-translate="services.sales.products.residential.desc">Split systems, window units, and portable air conditioners for homes.</p>
+                        </div>
+                        <div class="product-item">
+                            <h4 data-translate="services.sales.products.commercial.title">Commercial AC</h4>
+                            <p data-translate="services.sales.products.commercial.desc">Large capacity systems for offices, retail spaces, and commercial buildings.</p>
+                        </div>
+                        <div class="product-item">
+                            <h4 data-translate="services.sales.products.industrial.title">Industrial AC</h4>
+                            <p data-translate="services.sales.products.industrial.desc">Heavy-duty systems for industrial facilities and manufacturing plants.</p>
+                        </div>
+                        <div class="product-item">
+                            <h4 data-translate="services.sales.products.parts.title">Parts & Accessories</h4>
+                            <p data-translate="services.sales.products.parts.desc">Genuine replacement parts and accessories for all major brands.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-cta">
+                        <a href="contact.html" class="btn btn-primary" data-translate="services.sales.cta.quote">Get Quote</a>
+                        <a href="#" class="btn btn-secondary" data-translate="services.sales.cta.catalog">View Catalog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chiller Systems Section -->
+    <section id="chiller" class="service-detail">
+        <div class="container">
+            <div class="service-detail-content">
+                <div class="service-detail-text">
+                    <h2 data-translate="services.chiller.full.title">Chiller Systems</h2>
+                    <p data-translate="services.chiller.full.desc">Specialized repair and sales of industrial chiller systems for commercial and industrial applications. Our expertise covers all types of chillers including air-cooled, water-cooled, and absorption chillers.</p>
+                    
+                    <div class="service-features">
+                        <div class="service-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="services.chiller.feature1">Industrial expertise</span>
+                        </div>
+                        <div class="service-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="services.chiller.feature2">All chiller types</span>
+                        </div>
+                        <div class="service-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="services.chiller.feature3">Preventive maintenance</span>
+                        </div>
+                        <div class="service-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="services.chiller.feature4">Energy optimization</span>
+                        </div>
+                    </div>
+
+                    <h3 data-translate="services.chiller.types.title" style="margin-bottom: 30px;">Chiller Types We Handle</h3>
+                    <div class="chiller-types">
+                        <div class="chiller-type">
+                            <h4 data-translate="services.chiller.types.air.title">Air-Cooled Chillers</h4>
+                            <p data-translate="services.chiller.types.air.desc">Efficient cooling systems that use ambient air for heat rejection, ideal for smaller to medium applications.</p>
+                        </div>
+                        <div class="chiller-type">
+                            <h4 data-translate="services.chiller.types.water.title">Water-Cooled Chillers</h4>
+                            <p data-translate="services.chiller.types.water.desc">High-capacity systems using water for heat rejection, perfect for large commercial and industrial facilities.</p>
+                        </div>
+                        <div class="chiller-type">
+                            <h4 data-translate="services.chiller.types.absorption.title">Absorption Chillers</h4>
+                            <p data-translate="services.chiller.types.absorption.desc">Energy-efficient systems that use heat instead of mechanical compression for cooling.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-cta">
+                        <a href="contact.html" class="btn btn-primary" data-translate="services.chiller.cta.contact">Contact Us</a>
+                        <a href="tel:+77750692588" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i>
+                            <span data-translate="services.chiller.cta.call">Call Expert</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-detail-image">
+                    <img src="./img/чиллер2.jpg" alt="Chiller System">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Section -->
+    <section id="consultation" class="service-detail">
+        <div class="container">
+            <div class="service-detail-content reverse">
+                <div class="service-detail-image">
+                    <img src="./img/консультации.jpg" alt="Consultation">
+                </div>
+                <div class="service-detail-text">
+                    <h2 data-translate="services.consultation.full.title">Expert Consultation</h2>
+                    <p data-translate="services.consultation.full.desc">Get expert advice on choosing the right air conditioning or chiller system for your specific needs. Our experienced consultants will help you make informed decisions.</p>
+                    
+                    <div class="service-features">
+                        <div class="service-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="services.consultation.feature1">Free consultation</span>
+                        </div>
+                        <!-- <div class="service-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="services.consultation.feature2">System sizing</span>
+                        </div>
+                        <div class="service-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="services.consultation.feature3">Energy analysis</span>
+                        </div> -->
+                        <div class="service-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="services.consultation.feature4">Cost optimization</span>
+                        </div>
+                    </div>
+
+                    <h3 data-translate="services.consultation.process.title" style="margin-bottom: 30px;">Consultation Process</h3>
+                    <div class="consultation-steps">
+                        <div class="consultation-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4 data-translate="services.consultation.process.step1.title">Initial Assessment</h4>
+                                <p data-translate="services.consultation.process.step1.desc">We evaluate your space, requirements, and budget to understand your needs.</p>
+                            </div>
+                        </div>
+                        <div class="consultation-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4 data-translate="services.consultation.process.step2.title">System Recommendation</h4>
+                                <p data-translate="services.consultation.process.step2.desc">Based on our analysis, we recommend the best system for your specific situation.</p>
+                            </div>
+                        </div>
+                        <div class="consultation-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4 data-translate="services.consultation.process.step3.title">Detailed Quote</h4>
+                                <p data-translate="services.consultation.process.step3.desc">We provide a comprehensive quote with all costs and specifications clearly outlined.</p>
+                            </div>
+                        </div>
+                        <div class="consultation-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4 data-translate="services.consultation.process.step4.title">Implementation Support</h4>
+                                <p data-translate="services.consultation.process.step4.desc">We guide you through the entire process from purchase to installation and beyond.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-cta">
+                        <a href="contact.html" class="btn btn-primary" data-translate="services.consultation.cta.schedule">Schedule Consultation</a>
+                        <a href="tel:+77750692588" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i>
+                            <span data-translate="services.consultation.cta.call">Call Expert</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-snowflake"></i>
+                        <span data-translate="footer.logo">Lider</span>
+                    </div>
+                    <p data-translate="footer.about.desc">Professional repair and sales of air conditioners and chiller systems. Quality service and reliable solutions for all your cooling needs.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer.services">Services</h4>
+                    <ul>
+                        <li><a href="services.html#repair" data-translate="footer.services.repair">AC Repair</a></li>
+                        <li><a href="services.html#sales" data-translate="footer.services.sales">AC Sales</a></li>
+                        <li><a href="services.html#chiller" data-translate="footer.services.chiller">Chiller Systems</a></li>
+                        <li><a href="services.html#consultation" data-translate="footer.services.consultation">Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer.company">Company</h4>
+                    <ul>
+                        <li><a href="about.html" data-translate="footer.company.about">About Us</a></li>
+                        <li><a href="contact.html" data-translate="footer.company.contact">Contact</a></li>
+                        <li><a href="services.html" data-translate="footer.company.careers">Careers</a></li>
+                        <li><a href="#" data-translate="footer.company.privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer.contact">Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> <span data-translate="footer.contact.phone">(123) 456-7890</span></p>
+                        <p><i class="fas fa-envelope"></i> <span data-translate="footer.contact.email">info@lider.com</span></p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span data-translate="footer.contact.address">123 HVAC Street, City, State 12345</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">&copy; 2024 Lider. All rights reserved. | Licensed & Insured</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
